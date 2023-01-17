@@ -24,4 +24,8 @@ public class CustomerService {
     public List<Customer> getByCpf(String cpf) {
         return customerRepository.findByCpf(cpf);
     }
+
+    public List<Customer> getCustomers() {
+        return customerRepository.findAll();
+    }
 }
